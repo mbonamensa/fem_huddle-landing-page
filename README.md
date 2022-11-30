@@ -29,7 +29,7 @@ Users should be able to:
 
 - Solution URL: [Maame's Huddle Landing Page solution](https://github.com/mobonamensa/fem_huddle-landing-page)
 - Live Site URL: [Huddle landing Page](https://mbonamensa.github.io/fem_huddle-landing-page)
-- Figma file: [I created my own figma file](https://www.figma.com/file/6MMnRZacTFuO0UJGSTU0U8/Frontend-Mentor---FAQ-Accordion-Card?node-id=0%3A1&t=8gMJQ0Wz7Dc2fDkR-1)
+- Figma file: [I created my own figma file from the photo design given by Frontend Mentor](https://www.figma.com/file/IMFuQUsVkYnrAc4x2sfewi/Huddle-Landing-Page?node-id=0%3A1&t=pkcIX2ZugnHa995L-1)
 
 ## My process
 
