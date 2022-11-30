@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with curved sections solution
+# Frontend Mentor - Huddle landing solution by Maame
 
 This is a solution to the [Huddle landing page with curved sections challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -6,7 +6,6 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +13,7 @@ This is a solution to the [Huddle landing page with curved sections challenge on
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,85 +24,67 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Maame's Huddle Landing Page solution](https://github.com/mobonamensa/fem_huddle-landing-page)
+- Live Site URL: [Huddle landing Page](https://mbonamensa.github.io/fem_huddle-landing-page)
+- Figma file: [I created my own figma file](https://www.figma.com/file/6MMnRZacTFuO0UJGSTU0U8/Frontend-Mentor---FAQ-Accordion-Card?node-id=0%3A1&t=8gMJQ0Wz7Dc2fDkR-1)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS
 - Flexbox
-- CSS Grid
+- Grids
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Building this landing page taught me the importance of planning the structure of your page and the markup to use before actually coding. I found myself going back to the markup to make changes to fit the styles I wanted to implement. I practiced form validation with just CSS by using the `:invalid` psuedo selector. Here's the code I used: 
 
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  <form action="">
+    <input type="email" id="email" placeholder="Email">
+    <span></span>
+    <button>Subscribe</button>
+  </form>
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+```CSS
+  &:focus:invalid {
+    outline: 1px solid $invalid;
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+    + span::before {
+      content: "Check your email please";
+      position: absolute;
+      left: 0;
+      bottom: 34px;
+      font-size: 0.6rem;
+      color: $invalid;
+    }
+  }
+```
+
+The outcome:
+
+![](./img/Screenshot%20(67).png)
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd want to practice the various types form validation and get familiar with them.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Styling Form Inputs in CSS](https://www.digitalocean.com/community/tutorials/css-styling-form-input-validity) 
+- [CSS Invalid Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid) 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Maame Yaa Serwaa Bona-Mensa](https://mbonamensa.netlify.app)
+- Frontend Mentor - [@mbonamensa](https://www.frontendmentor.io/profile/mbonamensa)
+- Twitter - [@mys_bm](https://www.twitter.com/mys_bm)
